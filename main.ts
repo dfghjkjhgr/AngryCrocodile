@@ -10,7 +10,7 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.LogoDown, function () {
     man.change(LedSpriteProperty.Y, -1)
 })
-function doSomethi () {
+function GameOver () {
     // save for restart
     croc1.delete()
     croc2.delete()
@@ -75,7 +75,8 @@ o = game.createSprite(4, 1)
 r = game.createSprite(4, 2)
 r2 = game.createSprite(4, 3)
 d = game.createSprite(4, 4)
-let speed = 500
+let speed = 1000
+man.set(LedSpriteProperty.Blink, 200)
 basic.forever(function () {
     if (man.isTouching(croc1)) {
         doSomethi()
@@ -89,18 +90,27 @@ basic.forever(function () {
     if (man.isTouching(h)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
+        speed += -75
     }
     if (man.isTouching(o)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
+        speed += -75
     }
     if (man.isTouching(r)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
+        speed += -75
     }
     if (man.isTouching(r2)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
+        speed += -75
+    }
+    if (man.isTouching(d)) {
+        score += 1
+        man.set(LedSpriteProperty.X, 0)
+        speed += -500
     }
 })
 basic.forever(function () {
