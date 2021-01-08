@@ -22,10 +22,6 @@ function GameOver () {
     r.delete()
     r.delete()
     r2.delete()
-    music.setBuiltInSpeakerEnabled(true)
-    for (let index = 0; index < 4; index++) {
-        music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
-    }
     Animation = images.createImage(`
         # . . . #
         . . . . .
@@ -79,13 +75,13 @@ let speed = 1000
 man.set(LedSpriteProperty.Blink, 200)
 basic.forever(function () {
     if (man.isTouching(croc1)) {
-        doSomethi()
+        GameOver()
     }
     if (man.isTouching(croc2)) {
-        doSomethi()
+        GameOver()
     }
     if (man.isTouching(croc3)) {
-        doSomethi()
+        GameOver()
     }
     if (man.isTouching(h)) {
         score += 1
