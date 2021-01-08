@@ -4,8 +4,9 @@
     "dependencies": {
         "core": "*",
         "microphone": "*",
-        "bluetooth": "*",
-        "gamerbit": "github:sparkfun/pxt-gamer-bit#v0.0.8"
+        "gamerbit": "github:sparkfun/pxt-gamer-bit#v0.0.8",
+        "EPXDisplay": "github:microsoft/expressivepixelsmakecode#v1.3.5",
+        "radio": "*"
     },
     "files": [
         "main.blocks",
