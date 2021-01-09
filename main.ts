@@ -74,6 +74,13 @@ d = game.createSprite(4, 4)
 let speed = 1000
 man.set(LedSpriteProperty.Blink, 200)
 basic.forever(function () {
+    croc1.set(LedSpriteProperty.Y, randint(0, 5))
+    basic.pause(speed)
+    croc2.set(LedSpriteProperty.Y, randint(0, 5))
+    basic.pause(speed)
+    croc3.set(LedSpriteProperty.Y, randint(0, 5))
+})
+basic.forever(function () {
     if (man.isTouching(croc1)) {
         GameOver()
     }
@@ -108,11 +115,4 @@ basic.forever(function () {
         man.set(LedSpriteProperty.X, 0)
         speed += -500
     }
-})
-basic.forever(function () {
-    croc1.set(LedSpriteProperty.Y, randint(0, 5))
-    basic.pause(speed)
-    croc2.set(LedSpriteProperty.Y, randint(0, 5))
-    basic.pause(speed)
-    croc3.set(LedSpriteProperty.Y, randint(0, 5))
 })
