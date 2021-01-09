@@ -93,26 +93,21 @@ basic.forever(function () {
     if (man.isTouching(h)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
-        speed += -75
     }
     if (man.isTouching(o)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
-        speed += -75
     }
     if (man.isTouching(r)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
-        speed += -75
     }
     if (man.isTouching(r2)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
-        speed += -75
     }
     if (man.isTouching(d)) {
         score += 1
         man.set(LedSpriteProperty.X, 0)
-        speed += -500
     }
 })
