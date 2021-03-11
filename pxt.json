@@ -4,7 +4,6 @@
     "dependencies": {
         "core": "*",
         "microphone": "*",
-        "gamerbit": "github:sparkfun/pxt-gamer-bit#v0.0.8",
         "radio": "*"
     },
     "files": [
